@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 우선순위 규칙</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+	/* CSS 코드 
+		선택자 {
+			속성: 값;
+			속성: 값;
+			속성: 값;
+		}
+	*/
+		div {
+			padding: 1em;
+			color: red;
+			font-size: 22px;
+			border: 1px solid red; 
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- #parent>.child*2 -->
+	<div class="parent">
+		<h2>parent headline</h2>
+		<div class="child">
+			<h2>child headline</h2>
+		</div>
+		<div class="child">
+			<h2>child headline</h2>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
