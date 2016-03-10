@@ -1,0 +1,46 @@
+h1 {
+	font-size: 300%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 100%;
+	color: hotpink;
+}
+
+/*
+h1 {
+	font-size: 300%;
+}
+*/
+
+h2 {
+	font-size: 240%;
+}
+
+h3 {
+	font-size: 200%;
+	color: #9f00fe;
+	font-size: 1em;
+}
+
+h1 {
+	transition: all 1s cubic-bezier(0, -0.54, 1, 0.71);
+}
+
+h1:hover {
+	font-size: 400%;
+	color: tan;
+}
+
+
+em {
+/*	글자의 스타일 */
+	font-style: normal;
+/*	글자의 두께 */
+	font-weight: bold;
+/*	글자의 색상 */
+	color: #fc09ef;
+}

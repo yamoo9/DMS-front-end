@@ -1,0 +1,23 @@
+body {
+	margin: 0;
+}
+
+a {
+/*	화면에 표시되는 방식을 변경*/
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	width: 10em;
+	background-color: #303030;
+	border-radius: 4px;
+	margin: 1em auto;
+	padding: 1em;
+	text-align: center;
+	transition: all 0.4s ease;
+}
+
+a:hover {
+	background-color: aqua;
+	color: darkblue;
+	transform: scale(1.2);
+}

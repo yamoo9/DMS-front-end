@@ -1,5 +1,11 @@
 ###### Front-End Part.
 
+## HTML/CSS 기초
+
+1. CSS 박스 모델
+1. CSS 선택자와 적용 우선순위 규칙
+1. Wordpress 자식 테마
+
 ## Wordpress Child Theme
 
 제작(구입)한 워드프레스 테마를 사용자 입맛에 수정하고자 할 경우, 원본 테마를 수정하기 보다는 자식 테마를 만들어 수정해야 합니다.
