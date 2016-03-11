@@ -1,12 +1,89 @@
 ###### Front-End Part.
 
-## HTML/CSS 기초
+# HTML/CSS 기초
 
-1. CSS 박스 모델
-1. CSS 선택자와 적용 우선순위 규칙
-1. Wordpress 자식 테마
+## 1. CSS 스타일/선택자 적용 우선순위 규칙
 
-## Wordpress Child Theme
+```
+브라우저 기본 스타일
+      ↓
+외부 스타일 문서
+(HTML 파일과 분리된 CSS)
+      ↓
+<head> 내부에 작성한 스타일 코드
+(외부 스타일 문서보다 뒤에 작성한 경우)
+      ↓
+인라인 스타일 코드
+```
+
+-
+
+**스타일 우선순위 이해를 돕기 위한 일러스트**
+
+![CSS 우선 순위 규칙 1](../../Assets/css-proximity.gif)
+
+-
+
+**CSS 선택자 우선 순위**
+
+| Selector(선택자)| Order(우선순위)  |
+| ------------- | -------------- |
+| *             | 0-0-0-0        |
+| p             | 0-0-0-1        |
+| p a           | 0-0-0-2        |
+| .memo         | 0-0-1-0        |
+| p.memo        | 0-0-1-1        |
+| #banner       | 0-1-0-0        |
+| div#banner    | 0-1-0-1        |
+| #banner.slide | 0-1-1-0        |
+| inline-style  | 1-0-0-0        |
+| !important    | 1-0-0-0 ★      |
+
+-
+
+**선택자 우선순위 이해를 돕기 위한 일러스트**
+
+![CSS 우선순위 규칙 2](../../Assets/css-speciphicity.jpg)
+
+-
+
+**`!important`는 가급적 사용하지 않는 것이 좋다. (재앙 수준...)**
+
+![!important는 사용하면 안돼!](../../Assets/css-important.jpg)
+
+---
+
+## 2. CSS 박스 모델
+
+**HTML 모든 요소는 박스(사각형)**라는 사실!
+
+![HTML은 박스](../../Assets/css-web-borderbox@2x.png)
+
+-
+
+**CSS 박스 모델**
+
+![CSS Box Model](../../Assets/css-box-model.jpg)
+
+- offset-box (position-box)
+- margin-box
+- border-box
+- padding-box
+- content-box
+
+---
+
+## 3. CSS 레이아웃
+
+![CSS Layout](../../Assets/css-layout.png)
+
+- Float (Grid-System)
+- Position
+- Flexbox
+
+---
+
+## 4. Wordpress 자식 테마(Child Theme)
 
 제작(구입)한 워드프레스 테마를 사용자 입맛에 수정하고자 할 경우, 원본 테마를 수정하기 보다는 자식 테마를 만들어 수정해야 합니다.
 원본 테마를 수정하더라도 사용자가 원하는 설정으로 변경 가능하지만 수정한 내용은 추후 테마 업그레이드 시에 모두 사라져버리게 되기 때문이죠.
