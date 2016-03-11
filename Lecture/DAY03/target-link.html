@@ -2,54 +2,43 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>딸기(raspberry)우유 TOP10</title>
-	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<title>딸기우유 TOP10</title>
 	<style>
-		/* 공간 초기화 */
-		* {
-			margin: 0;
-		}
-		h1,h2,h3 {
-			font-weight: normal;
-			font-size: 100%; /* 16px */
-		}
-		
 		body {
-			background: url("images/bg-berry.jpg") no-repeat center top fixed;
-			background-size: cover;
-		}
-		
-		.body-header {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		}
-		
-		.page-title {
-			color: #fff;
-			font-family: "Permanent Marker", cursive;
-			font-size: 4rem;
-			text-shadow: 0 0 14px #163d2b;
-		}
-		
-		main {
-			margin-top: 100vh;
-			background: rgba(255,255,255,0.95);
-			padding-top: 100px;
-			padding-left: 20%;
-			padding-right: 20%;
+			
+			/* 배경 이미지 속기형 작성법 */
+			/* 기본 설정 값 */
+			/* background: transparent url() repeat left top scroll; */
+			/* 설정 (기본 값을 덮어 씀) */
+/*			background-repeat: repeat-x;*/
+			background: url("images/apple.png") no-repeat fixed;
+			
+			/* 배경 이미지 색상*/
+/*			background-color: #f37f6e;*/
+			/* 배경 이미지 설정 */
+/*			background-image: url("images/apple.png");*/
+			/* 배경 이미지 반복 여부 설정 */
+/*			background-repeat: no-repeat;  repeat, repeat-x, repeat-y, no-repeat */
+			/* 배경 이미지 위치 설정 */
+/*			background-position: center top;*/
+			/* 배경 이미지 고정 설정 */
+/*			background-attachment: fixed;  scroll, fixed */
+			
+			/* 외부 여백 설정(속기형 코드) */
+			margin: 100px 20%;
+/*
+			margin: top right bottom left;
+			margin-top
+			margin-right
+			margin-bottom
+			margin-left
+*/
 		}
 	</style>
 </head>
 <body>
 	
-	<header class="body-header">
-		<h1 class="page-title">Sweet Raspberry ♥</h1>
-	</header>
-	
-	<main>
-		<h1 id="headline">딸기덕후라면 반드시 알아야할 딸기우유 TOP10</h1>
+	<h1 id="headline">딸기덕후라면 반드시 알아야할 딸기우유 TOP10</h1>
 	
 	<ul id="contents-table">
 		<li><a href="#target-1">딸기우유 10종 소개</a></li>
@@ -95,7 +84,6 @@
 	</div>
 	
 	<a href="#headline">↑ 상위로 이동</a>
-	</main>
 
 	
 </body>
