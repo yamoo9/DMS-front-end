@@ -1,0 +1,14 @@
+#container {
+	background: white;
+}
+
+.gallery {
+	border: 1px solid #008dd2;
+	padding: 7px;
+	border-radius: 4px;
+	box-shadow: 0px 2px 0px #008dd2;
+}
+
+#container img {
+	float: right;
+}
