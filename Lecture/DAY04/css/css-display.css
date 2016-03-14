@@ -1,4 +1,6 @@
 #container {
+    width: 900px;
+    margin: 0 auto;
 	background: white;
 }
 
@@ -10,5 +12,6 @@
 }
 
 #container img {
-	float: right;
+	float: left;
+    margin-right: 1rem;
 }

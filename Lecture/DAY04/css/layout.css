@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+}
+
+.page-header {
+	background: #ffeebc;
+	height: 20vh;
+}
+
+.page-navigation {
+	background: #f9cc9d;
+	height: 10vh;
+}
+
+.page-main {
+	/*float: left;
+	width: 50%;*/
+	background: #7fcce6;
+	/*height: 70vh;*/
+	height: 50vh;
+}
+
+.page-sidebar-1 {
+	/*float: left;
+	width: 25%;*/
+	background: #d260b9;
+	height: 50vh;
+}
+
+.page-sidebar-2 {
+	/*float: left;
+	width: 25%;*/
+	background: #8c4deb;
+	height: 50vh;
+}
+
+.page-footer {
+	/*clear: both;*/
+	background: #313230;
+	height: 15vh;
+}
+

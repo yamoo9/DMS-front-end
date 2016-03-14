@@ -8,17 +8,19 @@ body {
 }
 
 .container div {
-	margin-bottom: 3em;
+    overflow: hidden;
+    margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
 .fl {
 	float: left;
-	margin-right: 10px;
+	margin-right: 2rem;
 }
 
 .fr {
 	float: right;
-	margin-left: 10px;
+	margin-left: 2rem;
 }
 
 .clear {
