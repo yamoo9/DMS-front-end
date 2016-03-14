@@ -7,6 +7,10 @@ body {
 	margin-right: 20%;
 }
 
+.container div {
+	margin-bottom: 3em;
+}
+
 .fl {
 	float: left;
 	margin-right: 10px;
@@ -15,4 +19,8 @@ body {
 .fr {
 	float: right;
 	margin-left: 10px;
+}
+
+.clear {
+	clear: both;
 }
