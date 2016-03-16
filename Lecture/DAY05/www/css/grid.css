@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*! grid.css © yamoo9.net, 2016 */
+
+/**
+ * --------------------------------
+ * 웹 브라우저 스타일 초기화
+ */
+body {margin: 0;}
+
+/**
+ * --------------------------------
+ * 그리드 시스템 설계
+ */
+.container {
+    /*배경이미지 (그리드 시스템 패턴 이미지)*/
+    background-image: url("../images/grid-10-80-10.gif");
+    /*컨테이너 요소의 높이와 넓이 설정*/
+    height: 100vh;
+    width:  1200px;
+    /*컨테이너 가운데 정렬(전체 페이지 폭에서 컨테이너 폭을 뺀 나머지 공간을 좌우 마진 값으로 양분)*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*[class*="unit-"] {
+    float: left;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #303239;
+}
+
+.unit-1  { width: 80px;   }
+.unit-2  { width: 180px;  }
+.unit-3  { width: 280px;  }
+.unit-4  { width: 380px;  }
+.unit-5  { width: 480px;  }
+.unit-6  { width: 580px;  }
+.unit-7  { width: 680px;  }
+.unit-8  { width: 780px;  }
+.unit-9  { width: 880px;  }
+.unit-10 { width: 980px;  }
+.unit-11 { width: 1080px; }
+.unit-12 { width: 1180px; }
+
+/* 1st, 2nd, 3rd, 4th, .., nth */
+.container *:nth-child(2n) {
+    background-color: #FFD219;
+}
