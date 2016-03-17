@@ -6,50 +6,42 @@
     <title>CSS Framework - Bootstrap</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
+        body {
+            min-height: 100vh;
+        }
+        .container-fluid {
+            max-width: 1200px;
+        }
         .row {
-            background: #333;
-            margin-bottom: 1rem;
+            margin-bottom: 0.4rem;
         }
-
         [class*="col-"] {
-            height: 60px;
-            background: #ff0;
+            height: 260px;
+            background: #17B585;
             text-align: center;
+            line-height: 260px;
+            font-size: 14px;
+            letter-spacing: -0.03em;
         }
-        [class*="col-"]:nth-child(even) {
-            background: #f00;
+        [class*="col-"]:nth-child(2n) {
+            background: #E5EA37;
+        }
+        [class*="col-"]:nth-child(3n) {
+            background: #3D7CE4;
+        }
+        [class*="col-"]:nth-child(4n) {
+            background: #EB308E;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-6 col-md-1">.col-md-1</div>
-          <div class="col-sm-6 col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-          <div class="col-md-1">.col-md-1</div>
-        </div>
-        <div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-md-4">.col-md-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4">.col-md-4</div>
-          <div class="col-md-4">.col-md-4</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">.col-md-6</div>
-          <div class="col-md-6">.col-md-6</div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">.col-xs-12 .col-sm-6 .col-md-4 .col-lg-3</div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">.col-xs-12 .col-sm-6 .col-md-4 .col-lg-3</div>
+          <div class="hidden-xs hidden-sm col-md-4 col-lg-3">.hidden-xs .hidden-sm .col-md-4 .col-lg-3</div>
+          <div class="hidden-xs hidden-sm hidden-md col-lg-3">.hidden-xs .hidden-sm .hidden-md .col-lg-3</div>
         </div>
     </div>
 
