@@ -2,14 +2,14 @@
 body {
 	width: 1200px;
 	/* 속기형 타입 작성 */
-	margin: 0 auto;
+	margin: 1.5rem auto;
 /*
 	margin-top: 0;
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left: 0;
 */
-	font: 700 1rem/1.5 'Quicksand', sans-serif;
+	font: 1rem/1.5 'Helvetica Neue', sans-serif;
 /*	font-family: 'Dosis', sans-serif;*/
 	/* 1rem = 16px */
 /*	font-size: 1rem;  */
@@ -41,19 +41,39 @@ h1,h2,h3,h4,h5,h6, p {
 }
 
 h1,h2,h3,h4,h5,h6 {
+	font-family: 'Quicksand';
 	font-weight: 300;
 	letter-spacing: -0.09em;
 /*	word-spacing: 0.18em;*/
 }
 /* Modular Scale을 반영한 Heading Type Design (Type Scale: 1.414) */
-h6 { font-size: 1rem; }
-h5 { font-size: 1.414rem; /* x1.414 */ }
-h4 { font-size: 1.999rem; /* x1.414 */ }
-h3 { font-size: 2.827rem; /* x1.414 */ }
-h2 { font-size: 3.998rem; /* x1.414 */ }
+h6 { 
+	font-size: 1rem;
+	line-height: 1.5;
+}
+h5 { 
+	font-size: 1.414rem; /* x1.414 */ 
+	line-height: 1.062;
+}
+h4 { 
+	font-size: 1.999rem; /* x1.414 */ 
+	line-height: 1.54;
+}
+h3 { 
+	font-size: 2.827rem; /* x1.414 */ 
+	line-height: 1.063;
+}
+h2 { 
+	font-size: 3.998rem; /* x1.414 */ 
+	line-height: 1.125562782;
+}
 h1 { 
 	font-size: 5.653rem;  /* x1.414 */
-	line-height: 1.061383336;
+	line-height: 1.062;
+}
+
+p {
+	font-size: 1rem;
 }
 
 .page-headline span {
