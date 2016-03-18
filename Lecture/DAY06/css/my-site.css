@@ -1,6 +1,7 @@
 /*Google Webfont - Dosis*/
 body {
-	width: 1200px;
+	width: 50%;
+	min-height: 100vh;
 	/* 속기형 타입 작성 */
 	margin: 1.5rem auto;
 /*
@@ -76,10 +77,49 @@ p {
 	font-size: 1rem;
 }
 
-.page-headline span {
+.marking {
+	font-family: 'Quicksand';
+	font-weight: 300;
 	color: tomato;
 }
 
+.page-slogan {
+	width: 60%;
+}
+
+/*네비게이션 디자인*/
+nav ul {
+	overflow: hidden;
+	list-style: none;
+	margin: 0 0 1.5rem;
+	padding-left: 0;
+}
+
+nav li {
+	float: left;
+	margin-right: 1rem;
+	border-right: 1px solid #ababab;
+	padding-right: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #d85a53;
+}
+
+nav a:hover {
+	color: #333;
+}
+
+main img {
+	margin-bottom: 1.5rem;
+	vertical-align: bottom;
+}
+
+main p {
+/*	width: 40%;*/
+	line-height: 1.5;
+}
 
 .assign-gradient {
 	width: 500px;
